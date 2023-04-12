@@ -71,7 +71,7 @@ export class News extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container" style={{overflowY:'hidden'}}>
         <div className="text-center my-2">
           <h1>
             Top-Headlines-
@@ -87,8 +87,11 @@ export class News extends Component {
           next={this.fetchMoreData}
           hasMore={this.state.articals.length !== this.state.totalCount}
           loader={<Spinner/>}
-          
+          height={500}
           scrollThreshold={1}
+          endMessage={ 
+            <p style={{textAlign:'center'}}><b>Yay! You've seen it all!</b></p>
+        }
         >
           <div className="row" style={{overflowX:'hidden'}}>
             {this.state.articals.map((ele, index) => {
