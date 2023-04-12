@@ -1,0 +1,2 @@
+body{height:100%;margin:0;overflow:hidden}.navbar{height:50px;padding:0 20px;position:fixed;top:0;width:100%}.content{box-sizing:border-box;height:calc(100vh - 50px);margin-top:50px;overflow:auto;overflow-x:hidden;padding:12px;width:100%}.article{height:200px;margin:12px 0;width:100%}.positionBadge{display:flex;justify-content:flex-end;position:absolute;right:0}
+/*# sourceMappingURL=main.2c33b956.css.map*/
